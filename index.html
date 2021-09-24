@@ -13,13 +13,24 @@
 
     <a-assets>
       <video id="videoId" src="young2.webm" muted="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline="" autoplay=""></video>
+      <audio id="sound" src="sound.wav" preload="auto" autoplay="true"loop="true"></audio>
     </a-assets>
+  
+  
+
 
     <!-- create your content here. just a box for now -->
-    <a-entity gltf-model="rino.glb" scale="0.5 0.5 0.5" animation-mixer position="1.0 0.0 0.0" rotation="-90 0 0"></a-entity>
+    <a-entity gltf-model="rino.glb" scale="1 1 1" animation-mixer position="1 0 2" rotation="-90 0 0"></a-entity>
 
-    <a-entity id="videoId" material="shader: transparent-video; src: #videoId" geometry="primitive: plane; width: 2; height: 2" position="0 1 -2"  playsinline="" autoplay=""<a-entity>
-
+    <a-entity id="videoId" material="shader: transparent-video; src: #videoId" 
+    geometry="primitive: plane; width: 2; height: 2" 
+    position="0 0 0"
+    scale="2 2 2"
+    rotation="-90 0 0"
+    playsinline=""
+    
+    autoplay=""<a-entity>
+      
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
